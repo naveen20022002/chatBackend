@@ -12,7 +12,7 @@ const fs = require('fs')
 
 
 const app = express();
-const PORT = process.env.API_URL;
+const PORT = 4000L;
 dotenv.config();
 jwtSecret = process.env.JWT_SECRET;
 const bcryptSalt = bcrypt.genSaltSync(10);
