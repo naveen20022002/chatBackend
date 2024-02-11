@@ -12,7 +12,8 @@ const fs = require('fs')
 
 
 const app = express();
-const PORT = process.env.API_URL || 4000;
+// const PORT = process.env.API_URL || 4000;
+const PORT = "https://chat-application-0bjs.onrender.com"
 dotenv.config();
 jwtSecret = process.env.JWT_SECRET;
 const bcryptSalt = bcrypt.genSaltSync(10);
