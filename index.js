@@ -23,10 +23,11 @@ mongoose.connect(process.env.MONGO_URL)
 app.use('/uploads', express.static(__dirname + '/uploads'))
 app.use(express.json());
 app.use(cookieParser())
-app.use(cors({
-    credentials:true,
-    origin: 'https://naveen-speak-ease.netlify.app',
-}))
+// app.use(cors({
+//     credentials:true,
+//     origin: 'https://naveen-speak-ease.netlify.app',
+// }))
+app.use(cors());
 
 app.get('/', (req, res)=>{
     res.send('hello')
